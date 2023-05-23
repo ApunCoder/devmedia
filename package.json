@@ -8,7 +8,10 @@
     "server": "nodemon server",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "npm install",
+    "build:frontend": "cd client && npm run build"
   },
   "author": "Nikhil",
   "license": "ASC",
