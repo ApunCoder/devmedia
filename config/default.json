@@ -1,5 +1,5 @@
 {
     "mongoURI": "mongodb+srv://hellonikhil570:nikk007@cluster0.t0rjj3x.mongodb.net/devbook",
     "jwtSecret": "mykey",
-    "githubToken": "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"
+    "githubToken": "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"
 }
